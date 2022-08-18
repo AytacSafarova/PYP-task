@@ -9,6 +9,9 @@
         padding: 0;
         box-sizing: inherit;
     }
+    /* html{
+        font-size: 10;
+    } */
 
     .container {
         position: relative;
