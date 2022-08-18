@@ -9,12 +9,11 @@
         padding: 0;
         box-sizing: inherit;
     }
+    /* html{
+        font-size: 10;
+    } */
 
-    .container {
-        position: relative;
-        height: auto;
-        display: flex;
-    }
+    
 
     .navbar {
         display: none;
@@ -22,6 +21,7 @@
 
 
     /* Left-container */
+   
     .left-container {
         position: fixed;
         width: 20%;
@@ -29,8 +29,10 @@
         padding-left: 20px;
         padding-top: 20px;
         background-color: #f1f1f1;
-        white-space: nowrap;
         overflow-y: scroll;
+    }
+    .passive{
+        display: none;
     }
 
     h6 {
@@ -75,12 +77,9 @@
 
     /*Right-container */
     .right-container {
-        margin-right: 40px;
-        position: absolute;
         width: 60%;
-        margin-left: 340px;
+        margin-left: 27%;
         padding: 15px 15px;
-
         border-right: 1px solid grey;
         border-top: 0.5px solid grey
     }
