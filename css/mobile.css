@@ -12,13 +12,15 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-size: 10px;
+ }
+ html{
+    font-size: 7px;
  }
 
     .navbar {
         width: 100%;
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
         min-height: 2rem;
         padding-top: 0.7rem;
         font-size: 1.5rem!important;
@@ -39,83 +41,81 @@
     }
 
     /* Left-container */
-
-    /* .left-container {
+   
+    .left-container {
         display: none;
+        z-index: 4;
         position: fixed;
-        display: none;
         width: 20%;
-        margin-left: 50px;
-        padding-left: 20px;
-        padding-top: 20px;
+        padding-left: 2rem;
+        padding-top: 2rem;
         background-color: #f1f1f1;
         white-space: nowrap;
         overflow-y: scroll;
     }
+   
 
     h6 {
-        margin-bottom: 30px;
-        margin-top: 25px;
-        font-size: 17px;
+        margin-bottom: 3rem;
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
     }
 
     .left-container p {
-        font-size: 15px;
-        margin-bottom: 15px;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
         color: #000 !important;
     }
 
     .left-container input {
         width: 90%;
-        height: 40px;
-        border: 1px solid #ccc !important;
-        padding-left: 10px;
+        height: 4rem;
+        border: 0.1rem solid #ccc !important;
+        padding-left: 1rem;
     }
 
     label {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     .left-container form .btn {
-        margin-top: 10px;
+        margin-top: 1rem;
     }
 
     .links {
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 
     .links a {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
         display: block;
         color: black;
 
     }
 
 
-    /*Right-container */
     .right-container {
-        /* position: relative; */
-        /* margin-top: 30px; */
         width: 100%;
         display: block;
-        padding-left:10px;
+        padding-left:1rem;
+        z-index: -2;
 
-        border-right: 1px solid grey;
-        border-top: 0.5px solid grey;
+        border-right: 0.1rem solid grey;
+        border-top: 0.05rem solid grey;
         position: absolute;
-        margin-top: 50px;
+        margin-top: 5rem;
 
     }
 
     .right-container h1 {
         color: #4CAF50;
-        font-size: 30px;
+        font-size: 3rem;
     }
 
     #apartment {
         width: 100%;
-        height: 500px;
+        height: 50rem;
         background-color: black;
     }
 
@@ -133,20 +133,20 @@
     }
 
     .right-container p {
-        font-size: 23px !important;
-        margin-bottom: 20px;
+        font-size: 2.3rem !important;
+        margin-bottom: 2rem;
     }
 
     .right-container h2 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 20px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
     }
 
     hr {
         border: 0;
-        border-top: 1px solid #eee;
-        margin: 20px 0;
+        border-top: 0.1rem solid #eee;
+        margin: 2rem 0;
     }
 
     .btn {
@@ -154,23 +154,23 @@
         padding: 0;
         text-align: center;
         color: #fff !important;
-        height: 30px;
-        width: 200px;
-        font-size: 15px;
+        height: 3rem;
+        width: 20rem;
+        font-size: 1.5rem;
     } 
 
     /* Contact */
     #contact {
-        margin-top: 40px;
+        margin-top: 4rem;
     }
 
     h5 {
-        font-size: 35px;
+        font-size: 3.5rem;
     }
 
     .right-container input {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         width: 100%;
-        height: 40px;
+        height: 4rem;
     }
 } 
