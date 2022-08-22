@@ -1,0 +1,146 @@
+{
+    "sourceFile": "public/main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 32,
+            "patches": [
+                {
+                    "date": 1661090493710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661090500645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,9 +93,8 @@\n    }else{\r\n       email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n    \r\n    }\r\n-   postbtn.addEventListener('click', post)\r\n    console.log(input.value)\r\n    async function post(e){\r\n        console.log(input.value)\r\n    \r\n"
+                },
+                {
+                    "date": 1661090524261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,29 +93,30 @@\n    }else{\r\n       email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n    \r\n    }\r\n-   console.log(input.value)\r\n-   async function post(e){\r\n-       console.log(input.value)\r\n+  postbtn.addEventListener('click', post)\r\n+console.log(input.value)\r\n+async function post(e){\r\n+    console.log(input.value)\r\n+\r\n+    console.log('salam')\r\n+    e.preventDefault() \r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            name: input.value\r\n+            \r\n+        }\r\n+    })\r\n+});\r\n+\r\n+}\r\n    \r\n-       console.log('salam')\r\n-       e.preventDefault() \r\n-       fetch('/', {\r\n-       method: 'POST',\r\n-       headers: {\r\n-           'Content-Type': 'application/json'\r\n-       },\r\n-       body: JSON.stringify({\r\n-           user: {\r\n-               name: input.value\r\n-               \r\n-           }\r\n-       })\r\n-   });\r\n-   \r\n-   }\r\n-   \r\n \r\n       \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661091668040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,31 +93,7 @@\n    }else{\r\n       email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n    \r\n    }\r\n-  postbtn.addEventListener('click', post)\r\n-console.log(input.value)\r\n-async function post(e){\r\n-    console.log(input.value)\r\n+  \r\n \r\n-    console.log('salam')\r\n-    e.preventDefault() \r\n-    fetch('/', {\r\n-    method: 'POST',\r\n-    headers: {\r\n-        'Content-Type': 'application/json'\r\n-    },\r\n-    body: JSON.stringify({\r\n-        user: {\r\n-            name: input.value\r\n-            \r\n-        }\r\n-    })\r\n-});\r\n-\r\n-}\r\n-   \r\n-\r\n-      \r\n-\r\n-\r\n       e.preventDefault()}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661091746605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,15 @@\n \r\n }else{\r\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n-}}\r\n+}\r\n \r\n \r\n+\r\n+}\r\n+\r\n+\r\n  function removesubscribe(){\r\n    subscribe_div.style.display=\"none\"\r\n \r\n  }\r\n@@ -93,7 +97,5 @@\n    }else{\r\n       email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n    \r\n    }\r\n-  \r\n-\r\n       e.preventDefault()}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661091782766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n subscribe_button.addEventListener('click',emailvalidation)\r\n //subscribe \r\n function subscribe(){\r\n    subscribe_div.style.display=\"block\"\r\n+   \r\n    }\r\n function emailvalidation(){\r\n    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n console.log('salam')\r\n"
+                },
+                {
+                    "date": 1661091797881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n subscribe_button.addEventListener('click',emailvalidation)\r\n //subscribe \r\n function subscribe(){\r\n    subscribe_div.style.display=\"block\"\r\n-   \r\n+\r\n    }\r\n function emailvalidation(){\r\n    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n console.log('salam')\r\n@@ -29,8 +29,22 @@\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n }\r\n \r\n+    console.log('salam')\r\n+    e.preventDefault() \r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            name: input.value\r\n+            \r\n+        }\r\n+    })\r\n+});\r\n \r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661091805179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n }\r\n \r\n-    console.log('salam')\r\n     e.preventDefault() \r\n     fetch('/', {\r\n     method: 'POST',\r\n     headers: {\r\n"
+                },
+                {
+                    "date": 1661091821715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,17 +29,16 @@\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n }\r\n \r\n-    e.preventDefault() \r\n     fetch('/', {\r\n     method: 'POST',\r\n     headers: {\r\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: input.value\r\n+            subscribe\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661091832086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            subscribe\r\n+            subscribe_email: \r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661091838317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            subscribe_email: \r\n+            subscribe_email: email_input_subscribe\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661091897609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,10 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            subscribe_email: email_input_subscribe\r\n-            \r\n+            subscribe_email: email_input_subscribe.value\r\n+            console.log\r\n         }\r\n     })\r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1661091903843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             subscribe_email: email_input_subscribe.value\r\n-            console.log\r\n+            console.log(email_input_subscribe)\r\n         }\r\n     })\r\n });\r\n \r\n"
+                },
+                {
+                    "date": 1661091913892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,9 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             subscribe_email: email_input_subscribe.value\r\n-            console.log(email_input_subscribe)\r\n-        }\r\n+X        }\r\n     })\r\n });\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661091920751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,11 +37,26 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             subscribe_email: email_input_subscribe.value\r\n-X        }\r\n+       }\r\n+       \r\n+    console.log('salam')\r\n+    e.preventDefault() \r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            name: input.value\r\n+            \r\n+        }\r\n     })\r\n });\r\n+    })\r\n+});\r\n \r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661092000902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n console.log('salam')\r\n    if (email_input_subscribe.value.match(validRegex)) {\r\n     email_input_subscribe.nextElementSibling.innerText=\"\" \r\n+    \r\n \r\n }else{\r\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n@@ -39,24 +40,10 @@\n         user: {\r\n             subscribe_email: email_input_subscribe.value\r\n        }\r\n        \r\n-    console.log('salam')\r\n-    e.preventDefault() \r\n-    fetch('/', {\r\n-    method: 'POST',\r\n-    headers: {\r\n-        'Content-Type': 'application/json'\r\n-    },\r\n-    body: JSON.stringify({\r\n-        user: {\r\n-            name: input.value\r\n-            \r\n-        }\r\n     })\r\n });\r\n-    })\r\n-});\r\n \r\n \r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1661092009323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n console.log('salam')\r\n    if (email_input_subscribe.value.match(validRegex)) {\r\n     email_input_subscribe.nextElementSibling.innerText=\"\" \r\n-    \r\n+    alert(\"thanks\")\r\n \r\n }else{\r\n    email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n \r\n"
+                },
+                {
+                    "date": 1661092233644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,8 @@\n    contact_input.forEach((item) => {\r\n       if (item.value==\"\"){\r\n          item.nextElementSibling.innerText=\"This field is required\"\r\n          console.log(item.nextElementSibling);\r\n-   \r\n           }\r\n           else{\r\n             item.nextElementSibling.innerText=\"\"\r\n    \r\n"
+                },
+                {
+                    "date": 1661092241406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,8 +99,22 @@\n          console.log(item.nextElementSibling);\r\n           }\r\n           else{\r\n             item.nextElementSibling.innerText=\"\"\r\n+            \r\n+    e.preventDefault() \r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            name: input.value\r\n+            \r\n+        }\r\n+    })\r\n+});\r\n    \r\n           }\r\n          })\r\n    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n"
+                },
+                {
+                    "date": 1661092253797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: input.value\r\n+            name: document.quer\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092355445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: document.quer\r\n+            name: document.querySelector(\"\")\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092360931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: document.querySelector(\"\")\r\n+            name: document.querySelector(\".contact\")\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092368167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: document.querySelector(\".contact\")\r\n+            name: document.querySelector(\".contact-form .nam\")\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092374821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: document.querySelector(\".contact-form .nam\")\r\n+            name: document.querySelector(\".contact-form .name-input\")\r\n             \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092380552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,10 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             name: document.querySelector(\".contact-form .name-input\")\r\n-            \r\n+            name: document.querySelector(\".contact-form .name-input\")\r\n+\r\n         }\r\n     })\r\n });\r\n    \r\n"
+                },
+                {
+                    "date": 1661092387662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             name: document.querySelector(\".contact-form .name-input\")\r\n-            name: document.querySelector(\".contact-form .name-input\")\r\n+            email: document.querySelector(\".contact-form .name-input\")\r\n \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092394566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             name: document.querySelector(\".contact-form .name-input\")\r\n-            email: document.querySelector(\".contact-form .name-input\")\r\n+            email: document.querySelector(\".contact-form .name-email\")\r\n \r\n         }\r\n     })\r\n });\r\n"
+                },
+                {
+                    "date": 1661092400961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            name: document.querySelector(\".contact-form .name-input\")\r\n+            name: document.querySelector(\".contact-form .name-input\"),\r\n             email: document.querySelector(\".contact-form .name-email\")\r\n \r\n         }\r\n     })\r\n"
+                },
+                {
+                    "date": 1661092409884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,10 +109,12 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             name: document.querySelector(\".contact-form .name-input\"),\r\n-            email: document.querySelector(\".contact-form .name-email\")\r\n+            email: document.querySelector(\".contact-form .name-email\"),\r\n+            nmessage: document.querySelector(\".contact-form .name-input\")\r\n \r\n+\r\n         }\r\n     })\r\n });\r\n    \r\n"
+                },
+                {
+                    "date": 1661092416397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,9 +110,9 @@\n     body: JSON.stringify({\r\n         user: {\r\n             name: document.querySelector(\".contact-form .name-input\"),\r\n             email: document.querySelector(\".contact-form .name-email\"),\r\n-            nmessage: document.querySelector(\".contact-form .name-input\")\r\n+            nmessage: document.querySelector(\".contact-form .message-input\")\r\n \r\n \r\n         }\r\n     })\r\n"
+                },
+                {
+                    "date": 1661092426384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,129 @@\n+const menu = document.querySelector(\".fa-bars\")\r\n+const dateinput=document.querySelectorAll(\".date\")\r\n+const search_input =document.querySelectorAll(\".search-form input\")\r\n+const contact_input =document.querySelectorAll(\".contact-form input\")\r\n+const search_form = document.querySelector(\".search-form\")\r\n+const contact_form = document.querySelector(\".contact-form\")\r\n+const subscribe_div=document.querySelector(\"#subscribe\")\r\n+const search_button=document.querySelector(\".search\")\r\n+const email_input_subscribe=document.querySelector(\"#subscribe .email-input\")\r\n+const email_input_contact=document.querySelector(\"#contact .email-input\")\r\n+\r\n+const subscribe_button=document.querySelector(\".subscribe-btn\")\r\n+\r\n+search_form.addEventListener('submit', search_validation);\r\n+contact_form.addEventListener('submit', contact_validation);\r\n+subscribe_button.addEventListener('click',emailvalidation)\r\n+//subscribe \r\n+function subscribe(){\r\n+   subscribe_div.style.display=\"block\"\r\n+\r\n+   }\r\n+function emailvalidation(){\r\n+   let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n+console.log('salam')\r\n+   if (email_input_subscribe.value.match(validRegex)) {\r\n+    email_input_subscribe.nextElementSibling.innerText=\"\" \r\n+    alert(\"thanks\")\r\n+\r\n+}else{\r\n+   email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n+\r\n+}\r\n+\r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            subscribe_email: email_input_subscribe.value\r\n+       }\r\n+       \r\n+    })\r\n+});\r\n+\r\n+\r\n+}\r\n+\r\n+\r\n+ function removesubscribe(){\r\n+   subscribe_div.style.display=\"none\"\r\n+\r\n+ }\r\n+ \r\n+\r\n+\r\n+//open navbar\r\n+menu.addEventListener('click',openslidebar)\r\n+\r\n+function openslidebar(){\r\n+   left_container.style.display=\"block\"\r\n+}\r\n+\r\n+\r\n+//date validation \r\n+function search_validation(e){\r\n+   dateinput.forEach((item) => {\r\n+   let values=item.value\r\n+   const myArray = values.split(\" \");\r\n+   const day =myArray[0]\r\n+   const month =myArray[1]\r\n+   const year =myArray[2]\r\n+   const currentyear = new Date().getFullYear();\r\n+   if(myArray.length==3& day<=30 & month<=12 & year==currentyear){\r\n+      item.nextElementSibling.innerText=\"\" }\r\n+else {\r\n+   item.nextElementSibling.innerText=\"Format is not valid\" }\r\n+   e.preventDefault() })\r\n+\r\n+//required validation \r\n+\r\n+search_input.forEach((item) => {\r\n+   if (item.value==\"\"){\r\n+      item.nextElementSibling.innerText=\"This field is required\"\r\n+      console.log(item.nextElementSibling);\r\n+\r\n+       }})\r\n+\r\n+}\r\n+\r\n+\r\n+\r\n+//contact-form validation \r\n+function contact_validation(e){\r\n+   contact_input.forEach((item) => {\r\n+      if (item.value==\"\"){\r\n+         item.nextElementSibling.innerText=\"This field is required\"\r\n+         console.log(item.nextElementSibling);\r\n+          }\r\n+          else{\r\n+            item.nextElementSibling.innerText=\"\"\r\n+            \r\n+    e.preventDefault() \r\n+    fetch('/', {\r\n+    method: 'POST',\r\n+    headers: {\r\n+        'Content-Type': 'application/json'\r\n+    },\r\n+    body: JSON.stringify({\r\n+        user: {\r\n+            contact-name: document.querySelector(\".contact-form .name-input\"),\r\n+            email: document.querySelector(\".contact-form .name-email\"),\r\n+            nmessage: document.querySelector(\".contact-form .message-input\")\r\n+        }\r\n+    })\r\n+});\r\n+   \r\n+          }\r\n+         })\r\n+   let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n+      if ( email_input_contact.value.match(validRegex)) {\r\n+       email_input_contact.nextElementSibling.innerText=\"\" \r\n+   \r\n+   }else{\r\n+      email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n+   \r\n+   }\r\n+      e.preventDefault()}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1661092426961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n         'Content-Type': 'application/json'\r\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n-            contactname: document.querySelector(\".contact-form .name-input\"),\r\n+            contact-name: document.querySelector(\".contact-form .name-input\"),\r\n             email: document.querySelector(\".contact-form .name-email\"),\r\n             nmessage: document.querySelector(\".contact-form .message-input\")\r\n         }\r\n     })\r\n"
+                },
+                {
+                    "date": 1661092447552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,9 +109,9 @@\n     },\r\n     body: JSON.stringify({\r\n         user: {\r\n             contact_name: document.querySelector(\".contact-form .name-input\"),\r\n-             contact_email: document.querySelector(\".contact-form .name-email\"),\r\n+          contact_email: document.querySelector(\".contact-form .name-email\"),\r\n             contact_nmessage: document.querySelector(\".contact-form .message-input\")\r\n         }\r\n     })\r\n });\r\n"
+                }
+            ],
+            "date": 1661090493710,
+            "name": "Commit-0",
+            "content": "const menu = document.querySelector(\".fa-bars\")\r\nconst dateinput=document.querySelectorAll(\".date\")\r\nconst search_input =document.querySelectorAll(\".search-form input\")\r\nconst contact_input =document.querySelectorAll(\".contact-form input\")\r\nconst search_form = document.querySelector(\".search-form\")\r\nconst contact_form = document.querySelector(\".contact-form\")\r\nconst subscribe_div=document.querySelector(\"#subscribe\")\r\nconst search_button=document.querySelector(\".search\")\r\nconst email_input_subscribe=document.querySelector(\"#subscribe .email-input\")\r\nconst email_input_contact=document.querySelector(\"#contact .email-input\")\r\n\r\nconst subscribe_button=document.querySelector(\".subscribe-btn\")\r\n\r\nsearch_form.addEventListener('submit', search_validation);\r\ncontact_form.addEventListener('submit', contact_validation);\r\nsubscribe_button.addEventListener('click',emailvalidation)\r\n//subscribe \r\nfunction subscribe(){\r\n   subscribe_div.style.display=\"block\"\r\n   }\r\nfunction emailvalidation(){\r\n   let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\nconsole.log('salam')\r\n   if (email_input_subscribe.value.match(validRegex)) {\r\n    email_input_subscribe.nextElementSibling.innerText=\"\" \r\n\r\n}else{\r\n   email_input_subscribe.nextElementSibling.innerText=\"Email is not valid\" \r\n\r\n}}\r\n\r\n\r\n function removesubscribe(){\r\n   subscribe_div.style.display=\"none\"\r\n\r\n }\r\n \r\n\r\n\r\n//open navbar\r\nmenu.addEventListener('click',openslidebar)\r\n\r\nfunction openslidebar(){\r\n   left_container.style.display=\"block\"\r\n}\r\n\r\n\r\n//date validation \r\nfunction search_validation(e){\r\n   dateinput.forEach((item) => {\r\n   let values=item.value\r\n   const myArray = values.split(\" \");\r\n   const day =myArray[0]\r\n   const month =myArray[1]\r\n   const year =myArray[2]\r\n   const currentyear = new Date().getFullYear();\r\n   if(myArray.length==3& day<=30 & month<=12 & year==currentyear){\r\n      item.nextElementSibling.innerText=\"\" }\r\nelse {\r\n   item.nextElementSibling.innerText=\"Format is not valid\" }\r\n   e.preventDefault() })\r\n\r\n//required validation \r\n\r\nsearch_input.forEach((item) => {\r\n   if (item.value==\"\"){\r\n      item.nextElementSibling.innerText=\"This field is required\"\r\n      console.log(item.nextElementSibling);\r\n\r\n       }})\r\n\r\n}\r\n\r\n\r\n\r\n//contact-form validation \r\nfunction contact_validation(e){\r\n   contact_input.forEach((item) => {\r\n      if (item.value==\"\"){\r\n         item.nextElementSibling.innerText=\"This field is required\"\r\n         console.log(item.nextElementSibling);\r\n   \r\n          }\r\n          else{\r\n            item.nextElementSibling.innerText=\"\"\r\n   \r\n          }\r\n         })\r\n   let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/;\r\n      if ( email_input_contact.value.match(validRegex)) {\r\n       email_input_contact.nextElementSibling.innerText=\"\" \r\n   \r\n   }else{\r\n      email_input_contact.nextElementSibling.innerText=\"Email is not valid\" \r\n   \r\n   }\r\n   postbtn.addEventListener('click', post)\r\n   console.log(input.value)\r\n   async function post(e){\r\n       console.log(input.value)\r\n   \r\n       console.log('salam')\r\n       e.preventDefault() \r\n       fetch('/', {\r\n       method: 'POST',\r\n       headers: {\r\n           'Content-Type': 'application/json'\r\n       },\r\n       body: JSON.stringify({\r\n           user: {\r\n               name: input.value\r\n               \r\n           }\r\n       })\r\n   });\r\n   \r\n   }\r\n   \r\n\r\n      \r\n\r\n\r\n      e.preventDefault()}"
+        }
+    ]
+}
