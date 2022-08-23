@@ -16,7 +16,7 @@
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         font-weight: 400;
         margin: 10px 0;
-     line-height: 1.5; 
+        line-height: 1.5;
 
     }
 
@@ -51,33 +51,33 @@
     .left-container form {
         margin-top: 40px;
     }
-    .fa-remove{
+
+    .fa-remove {
         display: none;
         position: absolute;
-        right: 0
-        ;
-        top: 0;
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-    #subscribe .fa-remove{
-        display: block;
-        position: absolute;
-        right: 0
-        ;
+        right: 0;
         top: 0;
         margin-top: 10px;
         margin-right: 10px;
     }
 
-    
+    #subscribe .fa-remove {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
 
     .left-container h3 {
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 15px;
-        color: #000!important
+        color: #000 !important
     }
 
     h6 {
@@ -87,7 +87,8 @@
     .left-container p {
         font-size: 15px;
         margin-bottom: 15px;
-        color: #000!important    }
+        color: #000 !important
+    }
 
 
     .left-container input {
@@ -115,8 +116,8 @@
         display: block;
         color: black;
         overflow: hidden;
-    text-decoration: none;
-    cursor: pointer;
+        text-decoration: none;
+        cursor: pointer;
 
     }
 
@@ -134,31 +135,37 @@
         font-size: 30px;
     }
 
-    #apartment{
+    #apartment {
         margin-top: 13px;
-     }
-     #apartment  .row1 img{
+    }
+
+    #apartment .row1 img {
         width: 100%;
         height: 370px;
     }
-    
-    #apartment  .row2 {
+
+    #apartment .row2 {
+        
         margin-top: 5px;
         display: flex;
         justify-content: space-between;
     }
-    #apartment  .row2  div{
+
+    #apartment .row2 div {
         padding: 5px;
     }
-    #apartment  .row2 >img{
+
+    #apartment .row2>img {
         width: 25%;
         margin-right: 10px;
         height: 100px;
-    
+
     }
-    #apartment   img ::hover{
-       opacity: 0.5;
-       cursor: pointer;
+
+    #apartment .row2 :hover {
+        cursor: pointer;
+
+        opacity: 0.5;
     }
 
 
@@ -185,11 +192,10 @@
     }
 
     .right-container .row p {
-       
-            font-size: 18px!important;
-             margin-bottom: 20px;
-             color:#000!important
-        
+
+        font-size: 18px !important;
+        margin-bottom: 20px;
+        color: #000 !important
     }
 
     .right-container h4 {
@@ -206,7 +212,8 @@
     .col2 div {
         display: flex;
     }
-    .span{
+
+    .span {
         margin-bottom: 15px;
     }
 
@@ -219,15 +226,16 @@
     .btn {
         background-color: #4CAF50;
         padding: 0;
-        border:none;
+        border: none;
         text-align: center;
         color: #fff !important;
         height: 30px;
         width: 200px;
         font-size: 15px;
     }
-    .btn:hover{
-        background-color: #ccc!important;
+
+    .btn:hover {
+        background-color: #ccc !important;
 
     }
 
@@ -240,13 +248,14 @@
     h2 {
         font-size: 30px;
     }
-    #contact p{
+
+    #contact p {
         margin-top: 10px;
         margin-bottom: 15px;
     }
 
     .right-container input {
-        width: 100%;
+        width: 80%;
         height: 40px;
         padding-left: 10px;
     }
@@ -268,11 +277,11 @@
         animation: rotate(0deg) scale(2) skew(0deg) translate(100px);
 
     }
-    #subscribe .fa-remove{
+
+    #subscribe .fa-remove {
         display: block;
         position: absolute;
-        right: 0
-        ;
+        right: 0;
         top: 0;
         margin-top: 10px;
         margin-right: 10px;
