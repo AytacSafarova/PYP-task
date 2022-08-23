@@ -60,6 +60,15 @@
         margin-top: 10px;
         margin-right: 10px;
     }
+    #subscribe .fa-remove{
+        display: block;
+        position: absolute;
+        right: 0
+        ;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 
     
 
@@ -145,6 +154,11 @@
         width: 25%;
         margin-right: 10px;
         height: 100px;
+    
+    }
+    #apartment   img ::hover{
+       opacity: 0.5;
+       cursor: pointer;
     }
 
 
@@ -253,6 +267,15 @@
         animation-duration: 3s;
         animation: rotate(0deg) scale(2) skew(0deg) translate(100px);
 
+    }
+    #subscribe .fa-remove{
+        display: block;
+        position: absolute;
+        right: 0
+        ;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 
     #subscribe div {

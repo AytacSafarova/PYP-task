@@ -6,6 +6,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
+
 });
  
 app.post('/', function(request, response){

@@ -1,8 +1,9 @@
 const menu = document.querySelector(".fa-bars")
-const  remove=document.querySelector(".fa-remove")
+const  remove_navbar=document.querySelector(".left-container.fa-remove")
 const left_container=document.querySelector(".left-container")
-let asidediv=document.querySelector(".asidediv")
+const  remove_subscribe=document.querySelector("#subscribe.fa-remove")
 
+let asidediv=document.querySelector(".asidediv")
 const dateinput=document.querySelectorAll(".date")
 const search_input =document.querySelectorAll(".search-form input")
 const contact_input =document.querySelectorAll(".contact-form input")
@@ -49,7 +50,6 @@ function closeslidebar(){
 //subscribe 
 function subscribe(){
    subscribe_div.style.display="block"
-
    }
 function emailvalidation(){
    let  validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;

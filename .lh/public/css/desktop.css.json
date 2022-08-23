@@ -1,0 +1,94 @@
+{
+    "sourceFile": "public/css/desktop.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1661232222829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1661232230208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n         top: 0;\r\n         margin-top: 10px;\r\n         margin-right: 10px;\r\n     }\r\n-    .fa-remove{\r\n+    #.fa-remove{\r\n         display: none;\r\n         position: absolute;\r\n         right: 0\r\n         ;\r\n"
+                },
+                {
+                    "date": 1661232240883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,10 @@\n         top: 0;\r\n         margin-top: 10px;\r\n         margin-right: 10px;\r\n     }\r\n-    #.fa-remove{\r\n-        display: none;\r\n+    #subscribe .fa-remove{\r\n+        display: block;\r\n         position: absolute;\r\n         right: 0\r\n         ;\r\n         top: 0;\r\n"
+                },
+                {
+                    "date": 1661232371105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,8 +262,17 @@\n         animation-duration: 3s;\r\n         animation: rotate(0deg) scale(2) skew(0deg) translate(100px);\r\n \r\n     }\r\n+    #subscribe .fa-remove{\r\n+        display: block;\r\n+        position: absolute;\r\n+        right: 0\r\n+        ;\r\n+        top: 0;\r\n+        margin-top: 10px;\r\n+        margin-right: 10px;\r\n+    }\r\n \r\n     #subscribe div {\r\n         transition: all 3s ease-in;\r\n         /* On hover */\r\n"
+                },
+                {
+                    "date": 1661232454075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,8 +153,9 @@\n     #apartment  .row2 >img{\r\n         width: 25%;\r\n         margin-right: 10px;\r\n         height: 100px;\r\n+    \r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232461628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,8 +155,11 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n+    #apartment  .row2 >img{\r\n+       \r\n+    }\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232474073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row2 >img{\r\n+    #apartment  .row2 >img :{\r\n        \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232481508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,10 +155,10 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row2 >img :{\r\n-       \r\n+    #apartment  .row2 >img : :hover{\r\n+       op\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232487323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row2 >img : :hover{\r\n-       op\r\n+       opacity: 10px;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232494898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row2 >img : :hover{\r\n+    #apartment  .row2 >img ::hover{\r\n        opacity: 10px;\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232511623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row2 >img ::hover{\r\n-       opacity: 10px;\r\n+       opacity: -10;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232630155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row2 >img ::hover{\r\n-       opacity: -10;\r\n+       opacity: 0.5;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232655990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,8 +157,9 @@\n     \r\n     }\r\n     #apartment  .row2 >img ::hover{\r\n        opacity: 0.5;\r\n+       cursor: ;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232781978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,10 +156,10 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row2 >img ::hover{\r\n-       opacity: 0.5;\r\n-       cursor: ;\r\n+       opacity: 0,5;\r\n+       cursor: pointer;\r\n     }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232797905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row2 >img ::hover{\r\n+    #apartment  .row1 >img ::hover{\r\n        opacity: 0,5;\r\n        cursor: pointer;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1661232818935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row1 >img ::hover{\r\n+    #apartment  .row1 img ::hover{\r\n        opacity: 0,5;\r\n        cursor: pointer;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1661232909684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row1 img ::hover{\r\n-       opacity: 0,5;\r\n+       opacity: 1\r\n        cursor: pointer;\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232915147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment  .row1 img ::hover{\r\n-       opacity: 1\r\n+       opacity: 1;\r\n        cursor: pointer;\r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1661232953772,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n         margin-right: 10px;\r\n         height: 100px;\r\n     \r\n     }\r\n-    #apartment  .row1 img ::hover{\r\n+    #apartment   img ::hover{\r\n        opacity: 1;\r\n        cursor: pointer;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1661232970260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n         height: 100px;\r\n     \r\n     }\r\n     #apartment   img ::hover{\r\n-       opacity: 1;\r\n+       opacity: 0.5;\r\n        cursor: pointer;\r\n     }\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1661232222829,
+            "name": "Commit-0",
+            "content": "@media only screen and (min-width: 994px) {\r\n    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');\r\n\r\n    * {\r\n        margin: 0;\r\n        padding: 0;\r\n        box-sizing: inherit;\r\n    }\r\n\r\n    h1,\r\n    h2,\r\n    h3,\r\n    h4,\r\n    h5,\r\n    h6 {\r\n        font-family: \"Raleway\", Arial, Helvetica, sans-serif;\r\n        font-weight: 400;\r\n        margin: 10px 0;\r\n     line-height: 1.5; \r\n\r\n    }\r\n\r\n    /* html{\r\n        font-size: 10;\r\n    } */\r\n\r\n    .container {\r\n        margin: auto;\r\n        width: 75%;\r\n    }\r\n\r\n    .navbar {\r\n        display: none;\r\n    }\r\n\r\n\r\n    /* Left-container */\r\n\r\n    .left-container {\r\n        position: fixed;\r\n        top: 0;\r\n        width: 20%;\r\n        height: 100vh;\r\n        padding-left: 20px;\r\n        padding-top: 20px;\r\n        background-color: #f1f1f1;\r\n        overflow: scroll;\r\n\r\n    }\r\n\r\n    .left-container form {\r\n        margin-top: 40px;\r\n    }\r\n    .fa-remove{\r\n        display: none;\r\n        position: absolute;\r\n        right: 0\r\n        ;\r\n        top: 0;\r\n        margin-top: 10px;\r\n        margin-right: 10px;\r\n    }\r\n    .fa-remove{\r\n        display: none;\r\n        position: absolute;\r\n        right: 0\r\n        ;\r\n        top: 0;\r\n        margin-top: 10px;\r\n        margin-right: 10px;\r\n    }\r\n\r\n    \r\n\r\n    .left-container h3 {\r\n        font-family: \"Raleway\", Arial, Helvetica, sans-serif;\r\n        font-size: 24px;\r\n        font-weight: 400;\r\n        margin-bottom: 15px;\r\n        color: #000!important\r\n    }\r\n\r\n    h6 {\r\n        font-size: 16px;\r\n    }\r\n\r\n    .left-container p {\r\n        font-size: 15px;\r\n        margin-bottom: 15px;\r\n        color: #000!important    }\r\n\r\n\r\n    .left-container input {\r\n        width: 90%;\r\n        height: 40px;\r\n        border: 1px solid #ccc !important;\r\n        padding-left: 10px;\r\n    }\r\n\r\n    label {\r\n        display: block;\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .left-container form .btn {\r\n        margin-top: 10px;\r\n    }\r\n\r\n    .links {\r\n        margin-top: 40px;\r\n    }\r\n\r\n    .links a {\r\n        margin-bottom: 40px;\r\n        display: block;\r\n        color: black;\r\n        overflow: hidden;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n\r\n    }\r\n\r\n\r\n    /*Right-container */\r\n    .right-container {\r\n        width: 60%;\r\n        margin-left: 28%;\r\n        padding: 0 15px;\r\n        border-right: 1px solid grey;\r\n    }\r\n\r\n    .right-container h1 {\r\n        color: #4CAF50 !important;\r\n        font-size: 30px;\r\n    }\r\n\r\n    #apartment{\r\n        margin-top: 13px;\r\n     }\r\n     #apartment  .row1 img{\r\n        width: 100%;\r\n        height: 370px;\r\n    }\r\n    \r\n    #apartment  .row2 {\r\n        margin-top: 5px;\r\n        display: flex;\r\n        justify-content: space-between;\r\n    }\r\n    #apartment  .row2  div{\r\n        padding: 5px;\r\n    }\r\n    #apartment  .row2 >img{\r\n        width: 25%;\r\n        margin-right: 10px;\r\n        height: 100px;\r\n    }\r\n\r\n\r\n\r\n\r\n    .row {\r\n        display: flex;\r\n    }\r\n\r\n    .col1 {\r\n        width: 49%;\r\n    }\r\n\r\n    .col2 {\r\n        width: 49%;\r\n    }\r\n\r\n    .message {\r\n        color: red;\r\n        ;\r\n        display: block;\r\n        height: 20px;\r\n\r\n    }\r\n\r\n    .right-container .row p {\r\n       \r\n            font-size: 18px!important;\r\n             margin-bottom: 20px;\r\n             color:#000!important\r\n        \r\n    }\r\n\r\n    .right-container h4 {\r\n        margin-top: 30px;\r\n        margin-bottom: 30px;\r\n        font-size: 20px;\r\n        font-weight: 400;\r\n    }\r\n\r\n    .col1 div {\r\n        display: flex;\r\n    }\r\n\r\n    .col2 div {\r\n        display: flex;\r\n    }\r\n    .span{\r\n        margin-bottom: 15px;\r\n    }\r\n\r\n    hr {\r\n        border: 0;\r\n        border-top: 1px solid #eee;\r\n        margin: 20px 0;\r\n    }\r\n\r\n    .btn {\r\n        background-color: #4CAF50;\r\n        padding: 0;\r\n        border:none;\r\n        text-align: center;\r\n        color: #fff !important;\r\n        height: 30px;\r\n        width: 200px;\r\n        font-size: 15px;\r\n    }\r\n    .btn:hover{\r\n        background-color: #ccc!important;\r\n\r\n    }\r\n\r\n\r\n    /* Contact */\r\n    #contact {\r\n        margin-top: 40px;\r\n    }\r\n\r\n    h2 {\r\n        font-size: 30px;\r\n    }\r\n    #contact p{\r\n        margin-top: 10px;\r\n        margin-bottom: 15px;\r\n    }\r\n\r\n    .right-container input {\r\n        width: 100%;\r\n        height: 40px;\r\n        padding-left: 10px;\r\n    }\r\n\r\n    #subscribe {\r\n\r\n        display: none;\r\n        z-index: 2;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 100%;\r\n        position: fixed;\r\n        background-color: rgba(0, 0, 0, 0.4);\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n        animation: ease-in;\r\n        animation-duration: 3s;\r\n        animation: rotate(0deg) scale(2) skew(0deg) translate(100px);\r\n\r\n    }\r\n\r\n    #subscribe div {\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n\r\n        position: absolute;\r\n        transition: all 4s;\r\n        padding: 15px 20px;\r\n        text-align: center;\r\n        left: 50%;\r\n        top: 20%;\r\n        transform: translate(-50%, 0);\r\n        width: 60%;\r\n        height: auto;\r\n        background-color: white;\r\n        transition: all 1s ease-in;\r\n        /* On hover */\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n\r\n\r\n    }\r\n\r\n    #subscribe {\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n\r\n        animation: animatezoom 0.6s;\r\n        animation-duration: 0.6s;\r\n        animation-timing-function: ease;\r\n        animation-delay: 0s;\r\n        animation-iteration-count: 1;\r\n        animation-direction: normal;\r\n        animation-fill-mode: none;\r\n        animation-play-state: running;\r\n        animation-name: animatezoom;\r\n    }\r\n\r\n    #subscribe div h1 {\r\n        margin-bottom: 20px;\r\n\r\n        margin-top: 20px;\r\n        font-size: 30px;\r\n        font-weight: 400;\r\n    }\r\n\r\n    #subscribe div h2 {\r\n        margin-bottom: 20px;\r\n        font-weight: 400;\r\n        font-size: 20px;\r\n        color: #000 !important;\r\n\r\n    }\r\n\r\n    #subscribe input {\r\n\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n\r\n        width: 90%;\r\n        height: 40px;\r\n\r\n\r\n    }\r\n\r\n    #subscribe .btn {\r\n        transition: all 3s ease-in;\r\n        /* On hover */\r\n\r\n        width: 130px;\r\n        height: 40px;\r\n        margin-top: 20px;\r\n        margin-bottom: 20px;\r\n    }\r\n\r\n\r\n    #subscribe i {\r\n        float: right;\r\n    }\r\n\r\n}"
+        }
+    ]
+}
